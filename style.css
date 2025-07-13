@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(15, 30px);
+  grid-template-rows: repeat(15, 30px);
+  gap: 2px;
+  justify-content: center;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  border: 2px solid #888;
+}
+
+.board div {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.rack {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.tile {
+  width: 40px;
+  height: 40px;
+  background-color: #ffeb3b;
+  border: 2px solid #333;
+  margin: 4px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: grab;
+  user-select: none;
+}
+
+.tile.dragging {
+  opacity: 0.5;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
